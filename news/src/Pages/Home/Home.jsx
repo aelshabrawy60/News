@@ -26,7 +26,7 @@ function Home() {
   return (
     <div className='row m-0'>
       <div className='col-5 m-4'>
-        <NewsCard img={data.urlToImage} info={{author: data.author,title: data.title,link : data.url, date : data.publishedAt, catogery : 'sport'}}/>
+        <NewsCard img={data.urlToImage} info={{author: data.author,title: data.title,link : data.url, date : data.publishedAt, catogery : 'sport'}} type={0}/>
       </div>
     </div>
   )
