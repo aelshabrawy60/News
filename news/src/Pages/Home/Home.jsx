@@ -12,8 +12,8 @@ function Home() {
   useEffect(()=>{
     const fetchData_2 = async () => {
       try {
-        const result = await fetchData('messi'); // Example API
-        setData(result['articles'][1]);
+        //const result = await fetchData('messi'); // Example API
+        //setData(result['articles'][10]);
       } catch (err) {
         
       } finally {
@@ -24,8 +24,10 @@ function Home() {
     console.log(data)
   }, [])
   return (
-    <div>
-      <NewsCard img={data.urlToImage} info={{author: data.author,title: data.title,link : data.url, date : data.publishedAt, catogery : 'sport'}}/>
+    <div className='row m-0'>
+      <div className='col-5 m-4'>
+        <NewsCard img={data.urlToImage} info={{author: data.author,title: data.title,link : data.url, date : data.publishedAt, catogery : 'sport'}}/>
+      </div>
     </div>
   )
 }
