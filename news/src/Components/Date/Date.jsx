@@ -11,7 +11,7 @@ function Date({date}) {
             <SlCalender />
         </div>
         <div className='date__data'>
-            {date.slice(0,10)}
+            {date?.slice(0,10)}
         </div>
     </div>
   )
