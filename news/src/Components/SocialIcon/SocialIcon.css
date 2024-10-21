@@ -1,0 +1,24 @@
+.social-icon-container{
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social__body{
+    border-left: 1px solid white;
+}
+
+.icon-container{
+    background-color: #ffffff50;
+    border-radius: 50%;
+    width: 44px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+.icon-container:hover{
+    background-color: white;
+    color: black;
+}

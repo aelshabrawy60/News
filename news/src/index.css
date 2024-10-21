@@ -7,3 +7,37 @@ body{
     font-family: "Poppins", sans-serif;
     background-color: rgb(18, 18, 18);
 }
+
+.section__header{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+
+.section__title{
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-wrap: nowrap;
+}
+
+.section-header__dot{
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.section-header__liens{
+    height: 4px;
+    width: 100%;
+    border-top: 1px solid #222121;
+    border-bottom: 1px solid #222121;
+}
+.section__title--small{
+    font-size: 20px;
+    text-transform: uppercase;
+}

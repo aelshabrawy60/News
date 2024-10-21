@@ -1,0 +1,21 @@
+
+.btns_group{
+    border: 1px solid;
+    border: 1px solid #222121;
+    border-radius: 5px;
+}
+
+.btn_choosen{
+    background-color: blue !important;
+}
+.group_btn{
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    transition: all 0.5s;
+}
+
+.group_btn:hover{
+    background-color: blue;
+}

@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Date from '../Date/Date'
 
 import './NewsCard.css'
 
 function NewsCard({img, info = {title: '', description: '', author : '', link: '', date: '', catogery: 'sports'}, type = 0}) {
-
     if(type == 0){
+        if(img?.length == 0 || img == null){
+            img = 'null_img.jpg'
+        }
         return (
             <a href={info.link} target='_blank'> 
                 <div className='news_card p-5 d-flex align-items-end'>
@@ -33,6 +35,9 @@ function NewsCard({img, info = {title: '', description: '', author : '', link: '
             </a>
         )
     }else if(type == 1){
+        if(img?.length == 0 || img == null){
+            img = 'null_img.jpg'
+        }
         return (
             <a href={info.link} target='_blank'> 
                 <div className='news_card d-flex align-items-top gap-4'>
@@ -60,6 +65,9 @@ function NewsCard({img, info = {title: '', description: '', author : '', link: '
             </a>
         )
     }else if(type == 2){
+        if(img?.length == 0 || img == null){
+            img = 'null_img.jpg'
+        }
         return (
             <a href={info.link} target='_blank'> 
                 <div className='news_card align-items-top gap-4'>
@@ -87,6 +95,9 @@ function NewsCard({img, info = {title: '', description: '', author : '', link: '
             </a>
         )
     }else if(type == 3){
+        if(img?.length == 0 || img == null){
+            img = 'null_img.jpg'
+        }
         return (
             <a href={info.link} target='_blank'> 
                 <div className='news_card d-flex justify-content-between align-items-top gap-4'>
@@ -111,9 +122,12 @@ function NewsCard({img, info = {title: '', description: '', author : '', link: '
             </a>
         )
     }else if(type == 4){
+        if(img?.length == 0 || img == null){
+            img = 'null_img.jpg'
+        }
         return (
             <a href={info.link} target='_blank'> 
-                <div className='news_card row m-0 align-items-top gap-4' style={{height: 'auto'}}>
+                <div className='news_card row m-0 align-items-top gap-4' style={{height: '100%'}}>
                     <div className='news-card__img-container col-4 news-card__img-container_1'>
                         <img src={img} style={{width: '100%', height: '100%'}}></img>
                         <div className='fade_bottom d-none'></div>
