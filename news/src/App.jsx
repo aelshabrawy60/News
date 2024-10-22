@@ -4,6 +4,7 @@ import './App.css'
 import Home from './Pages/Home/Home';
 import News from './Pages/News/News';
 import Navbar from './Sections/Navbar/Navbar';
+import SearchBox from './Components/SearchBox/SearchBox';
 
 function App() {
 
