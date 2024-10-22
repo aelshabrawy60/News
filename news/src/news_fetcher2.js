@@ -14,7 +14,7 @@ export const fetchData = async (catogery) => {
         url: 'https://api.newscatcherapi.com/v2/latest_headlines?',
         params: {lang : 'EN' , topic: catogery},
         headers: {
-          'x-api-key': api_key
+          'x-api-key': 's'
         }
     };
 

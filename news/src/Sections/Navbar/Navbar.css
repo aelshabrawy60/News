@@ -1,0 +1,22 @@
+.navbar{
+    --bs-navbar-color: rgba(255, 255, 255, 0.662);
+    --bs-navbar-active-color: white;
+    --bs-navbar-brand-color: rgba(255, 255, 255, 0.744);
+    --bs-navbar-hover-color: white;
+}
+.navbar-brand img{
+    width: 100%;
+}
+.navbar-brand{
+    width: 160px;
+}
+.search_box{
+    width: 160px;
+}
+
+.search_btn{
+    background: none;
+    border: none;
+    font-size: 23px;
+    color: white;
+}

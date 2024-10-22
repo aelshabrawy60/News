@@ -18,7 +18,6 @@ function Catogery({catogery}) {
           }
         };
         fetchData_2()
-        console.log(data)
       }, [])
 
     return (
