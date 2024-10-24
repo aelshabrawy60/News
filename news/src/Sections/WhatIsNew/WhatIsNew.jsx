@@ -42,7 +42,6 @@ function WhatIsNew() {
     };
 
     fetchData_2();
-    console.log(data)
   }, [current]);
 
   return (
@@ -75,7 +74,7 @@ function WhatIsNew() {
             </div>
         </div>
       </div>
-      <div className='row m-0 justify-content-between'>
+      <div className='row m-0 row-gap-5 justify-content-between'>
           <motion.div initial={{opacity: 0, x:-150}} viewport={{ once: true}} whileInView={{opacity: 1, x:0}} transition={{duration: 0.8}} className='col-lg-7 col-12 pe-2 p-0'>
             <NewsCard img={data[0]?.media} info={{author: data[0]?.author, description : data[0]?.description ,title: data[0]?.title,link : data[0]?.link, date : data[0]?.published_date, catogery : data[0]?.topic}} small={1} type={0}/>
           </motion.div>

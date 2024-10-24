@@ -117,8 +117,8 @@ function NewsCard({img, info = {title: '', description: '', author : '', link: '
                             </div>
                         </div>
                     </div>
-                    <div className='news-card__img-container p-0 ms-3 col news-card__img-container_1' >
-                        <img src={img} style={{width: '144px' , height : '114px'}}></img>
+                    <div className='news-card__img-container p-0 ms-3 col news-card__img-container_1' style={{width: '144px' , height : '114px'}}>
+                        <img src={img} ></img>
                         <div className='fade_bottom d-none'></div>
                     </div>
                 </div>

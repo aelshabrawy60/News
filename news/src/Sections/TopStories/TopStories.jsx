@@ -29,7 +29,7 @@ function TopStories({news}) {
               <div className='section-header__liens'></div>
             </div>
         </div>
-        <motion.div initial="hidden" whileInView="visible" viewport={{once: true}}  variants={listVariants} className='top-stories__body row row-gap-4'>
+        <motion.div initial="hidden" whileInView="visible"  variants={listVariants} className='top-stories__body row row-gap-4'>
             {news.map((item, i)=> <motion.div variants={itemVariants}  className='col'><NewsCard img={item.media} info={{author: item.author, description : item.description ,title: item.title,link : item.link, date : item.published_date, catogery : item.topic}} type={2}/></motion.div>)}
         </motion.div>
     </div>

@@ -11,7 +11,7 @@ export const fetchData = async (lang) => {
     var options = {
         method: 'GET',
         url: 'https://api.newscatcherapi.com/v2/latest_headlines?',
-        params: {lang : lang, not_sources: 'wn.com'},
+        params: {lang : lang, not_sources: 'wn.com', },
         headers: {
           'x-api-key': api_key
         }

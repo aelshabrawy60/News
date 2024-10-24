@@ -10,7 +10,6 @@ function SocialIcon({icon, color, num, type = 0}) {
         let r = Math.min(255, (num >> 16) + (255 * percent) / 100);
         let g = Math.min(255, ((num >> 8) & 0x00FF) + (255 * percent) / 100);
         let b = Math.min(255, (num & 0x0000FF) + (255 * percent) / 100);
-        console.log(color)
         return (
           '#' +
           ((1 << 24) | (r << 16) | (g << 8) | b)
