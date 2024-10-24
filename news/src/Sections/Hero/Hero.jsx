@@ -2,17 +2,27 @@ import React, { useEffect, useState } from 'react'
 
 import './Hero.css'
 import NewsCard from '../../Components/NewsCard/NewsCard'
+import Loading from '../../Components/Loading/Loading'
 
 function Hero({news = [], type = 0}) {
-
+    
+    
+    if(news.length == 0){
+        console.log('hero'+news)
+        return(
+            <div style={{height: '70vh'}}>
+                <Loading/>
+            </div>
+        )
+    }
 
   return (
     <div className='hero_container p-0'>
         <div className='row m-0 row-gap-5'>
-            <div className='col-lg-7 col-12'>
-                <NewsCard img={news[0]?.media} info={{author: news[0]?.author, description : news[0]?.description ,title: news[0]?.title,link : news[0]?.link, date : news[0]?.published_date, catogery : news[0]?.topic}} type={0}/>
+            <div className='col-lg-7 me-3 p-0 col-12'>
+                <NewsCard img={news[0]?.media} info={{author: news[0]?.author, description : news[0]?.description ,title: news[0]?.title,link : news[0]?.link, date : news[0]?.published_date, catogery : news[0]?.topic}} small={type != 0 ? 1 : 0} type={0}/>
             </div>
-            <div className='col row gap-4'>
+            <div className='col-12 col-lg-5 d-none d-md-flex row gap-4'>
                 <div className='col-12'>
                     <NewsCard img={news[1]?.media} info={{author: news[1]?.author, description : news[1]?.description ,title: news[1]?.title,link : news[1]?.link, date : news[1]?.published_date, catogery : news[1]?.topic}} type={type == 0 ? 1: 3}/>
                 </div>

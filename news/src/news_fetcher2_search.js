@@ -7,12 +7,12 @@ const api_key = 'rNgVcLn5ql25YMm9Iv0z3J-BNtI6Qj4VzA3wPf26TbM'
 
 
 
-export const fetchData = async (keyword) => {
+export const fetchData = async (keyword, lang) => {
 
     var options = {
         method: 'GET',
         url: 'https://api.newscatcherapi.com/v2/search',
-        params: {q: keyword, lang: 'EN', sort_by: 'relevancy', page: '1'},
+        params: {q: keyword, lang: lang, sort_by: 'relevancy', page: '1'},
         headers: {
           'x-api-key': api_key
         }
@@ -20,6 +20,7 @@ export const fetchData = async (keyword) => {
 
     try {
         const response = await axios.request(options); // Use Axios to fetch data
+        
         return response.data; // Return the fetched data
     } catch (error) {
         // Check if the error has a response from the server

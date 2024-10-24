@@ -6,13 +6,17 @@
 
 .social__body{
     border-left: 1px solid white;
+    font-size: 13px;
+    font-weight: 600;
+    height: fit-content;
 }
 
 .icon-container{
-    background-color: #ffffff50;
+    background-color: #ffffff25;
     border-radius: 50%;
-    width: 44px;
-    height: 34px;
+    min-width: 36px;
+    height: 36px;
+    font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -14,7 +14,7 @@ function LastNews({news}) {
             </div>
         </div>
         <div className='d-flex flex-column gap-5'>
-          {news?.slice(0,4).map((news)=> <div style={{height: '250px'}}><NewsCard img={news.urlToImage} info={{author: news.author, description : news.description ,title: news.title,link : news.url, date : news.publishedAt, catogery : 'sport'}} type={4}/></div>)}
+          {news?.map((news)=> <div style={{height: 'fit-content'}}><NewsCard img={news.media} info={{author: news.author, description : news.excerpt?.length > 120 ? news.excerpt.slice(0,120) + '.....' : news.excerpt ,title: news.title,link : news.url, date : news.published_date, catogery : news.topic}} type={4}/></div>)}
         </div>
     </div>
   )

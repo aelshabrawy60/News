@@ -1,0 +1,31 @@
+.news-letter-container{
+    color: white;
+    background-color: rgb(23, 23, 23);
+    padding: 30px;
+}
+
+.dash-long{
+    width: 45%;
+    background-color: var(--main_color);
+    height: 1px;
+}
+
+.dash-short{
+    width: 25%;
+    background-color: var(--main_color);
+    height: 1px;
+}
+
+.news-letter__header{
+    width: fit-content;
+}
+
+
+.news-letter__title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.news-letter__text{
+    font-size: 13px;
+}

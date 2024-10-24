@@ -1,0 +1,40 @@
+
+.footer-container{
+    color: #d0d0d0;
+    margin-top: 100px;
+}
+
+.footer_logo{
+    width: 220px;
+}
+
+.footer_logo img{
+    width: 100%;
+}
+
+.tag{
+    background: none;
+    border: 1px solid #252525;
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.tag:hover{
+    background-color: var(--main_color);
+    border-color: var(--main_color);
+}
+.footer__brand{
+    min-width: 300px;
+}
+.footer__tags{
+    min-width: 300px;
+}
+.footer__bottom{
+    border-top: 1px solid #252525;
+}
+
+.footer__catogries{
+    min-width: 300px;
+}

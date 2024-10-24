@@ -6,21 +6,22 @@ const api_key = 'rNgVcLn5ql25YMm9Iv0z3J-BNtI6Qj4VzA3wPf26TbM'
 
 
 
-
-export const fetchData = async (catogery) => {
-    catogery == null ? catogery = '': null
+export const fetchData = async (lang) => {
+    
     var options = {
         method: 'GET',
         url: 'https://api.newscatcherapi.com/v2/latest_headlines?',
-        params: {lang : 'EN' , topic: catogery},
+        params: {lang : lang, not_sources: 'wn.com'},
         headers: {
-          'x-api-key': 's'
+          'x-api-key': api_key
         }
     };
 
     try {
         const response = await axios.request(options); // Use Axios to fetch data
-        return response.data; // Return the fetched data
+        console.log(response.data)
+        return response.data;
+        // Return the fetched data
     } catch (error) {
         // Check if the error has a response from the server
         if (error.response) {

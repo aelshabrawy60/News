@@ -28,7 +28,7 @@
     width: 100%;
     min-width: 300px;
     max-width: 900px;
-    border-bottom: 1px solid blue;
+    border-bottom: 1px solid var(--main_color);
     padding: 20px 0px;
 }
 .search_field_container input{
@@ -47,5 +47,5 @@ input:focus-within{
     font-size: 24px;
 }
 .search_btn_2:hover{
-    color: blue;
+    color: var(--main_color);
 }

@@ -19,4 +19,19 @@
     border: none;
     font-size: 23px;
     color: white;
+    display: flex;
+    align-items: center;
+}
+
+.drobdown_btn{
+    background: none;
+    border: none;
+    color: white;
+}
+.drobdown_btn::after{
+    margin-left: 12px;
+}
+
+.dowpdown-lang{
+    cursor: pointer;
 }
