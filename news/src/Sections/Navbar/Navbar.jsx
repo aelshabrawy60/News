@@ -12,9 +12,7 @@ function Navbar({lang, langs, setLang}) {
             <nav class="navbar navbar-expand-lg navbar_container p-4">
                 <div class="container-xl">
                     <Link className="navbar-brand" to= '/'><img src='logo.png'></img></Link>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
+                    
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav column-gap-5 row-gap-3 ms-auto me-auto mb-5 mt-5 mt-lg-0 mb-lg-0">
                             <li class="nav-item">
@@ -30,7 +28,9 @@ function Navbar({lang, langs, setLang}) {
                             <a class="nav-link" href="#">politics</a>
                             </li>
                         </ul>
-                        <div className='search_box d-flex justify-content-between justify-contetn-lg-center align-items-center'>
+                        
+                    </div>
+                    <div className='search_box d-flex justify-content-between justify-contetn-lg-center align-items-center'>
                             <button className='search_btn' onClick={() => setSearch_open(true)}>
                                 <LuSearch />
                             </button>
@@ -46,7 +46,6 @@ function Navbar({lang, langs, setLang}) {
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </div>
             </nav>
         </div>

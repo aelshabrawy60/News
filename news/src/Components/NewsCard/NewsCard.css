@@ -22,7 +22,7 @@
 } 
 @media (max-width: 1000px) {
     .img_full{
-        height: calc(100vh - 170px);
+        height: calc(100vh - 233px);
         max-height: 600px;
     }
 }
